@@ -1,0 +1,60 @@
+# The Rocq proofs. They need CompCert 3.17 and, in analysis/, Coquelicot.
+# clight/quadrules.v is clightgen's output for quadrules.c, from simple_cfem's proof/C.
+# certification/ needs the configured CompCert of certification/configuration.patch;
+# scripts/check-rocq.py and scripts/check-configured-compcert.py check both parts.
+-Q . QuadratureC
+
+arithmetic/FiniteArithmetic.v
+arithmetic/FiniteRepresentation.v
+arithmetic/IntegerRounding.v
+arithmetic/FiniteInteger.v
+
+hermite/RealPolynomials.v
+hermite/HermiteInterpolation.v
+hermite/HermiteRolle.v
+hermite/HermiteRemainder.v
+
+clight/AnnotatedBehavior.v
+clight/quadrules.v
+clight/ClightExample.v
+clight/ClightLibrary.v
+clight/SilentTermination.v
+clight/ClightDeterminism.v
+clight/ClightApplication.v
+clight/StoredRules.v
+clight/RuleLibrary.v
+clight/ClightRules.v
+clight/ClightSafety.v
+clight/InternalCosine.v
+clight/PolynomialApplication.v
+clight/StoredPolynomialRules.v
+
+accuracy/ClightRoundoff.v
+accuracy/TableAccuracy.v
+accuracy/CallbackAccuracy.v
+accuracy/ClightAccuracy.v
+accuracy/ClightRepresentation.v
+accuracy/ClightInteger.v
+accuracy/ExampleIntegral.v
+accuracy/ValueAccuracy.v
+accuracy/StoredPolynomialAccuracy.v
+
+analysis/PolynomialAccuracy.v
+analysis/TaylorAccuracy.v
+analysis/SharpAccuracy.v
+analysis/ClightIntegralAccuracy.v
+
+compilation/CminorApplication.v
+compilation/CompilerBackend.v
+compilation/AsmApplication.v
+compilation/ApplicationAccuracy.v
+compilation/CsharpminorExample.v
+compilation/CminorExample.v
+compilation/CminorSafety.v
+compilation/CminorIntegralAccuracy.v
+compilation/PolynomialCompilation.v
+compilation/StoredPolynomialCompilation.v
+
+certification/CertifiedExternal.v
+certification/CertifiedPolynomial.v
+certification/CertifiedStoredPolynomial.v

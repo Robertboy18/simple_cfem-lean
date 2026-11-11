@@ -1,0 +1,26 @@
+name = "simple_cfem_lean"
+version = "0.1.0"
+defaultTargets = ["Quadrature", "CCLib"]
+# Our files are ordinary Lean files, not `module`s, and they import Mathlib, SymLean and FloatLib,
+# which use the module system.
+allowNonModules = true
+
+# lake-manifest.json pins the commits of SymLean and of FloatLib, which comes through SymLean.
+[[require]]
+name = "SymLean"
+git = "https://github.com/Robertboy18/SymLean.git"
+rev = "main"
+
+[[lean_lib]]
+name = "Quadrature"
+# SymLean's facet tracks the files that include_str reads, so editing cosine.c rechecks its proofs.
+needs = ["@/Quadrature:SymLean.embeddedInputs"]
+moreLeanArgs = [
+  "-DautoImplicit=false", "-DrelaxedAutoImplicit=false", "-DwarningAsError=true",
+  "-Dweak.linter.mathlibStandardSet=true",
+]
+
+[[lean_lib]]
+name = "CCLib"
+srcDir = "vendor/clean"
+moreLeanArgs = ["-DwarningAsError=true"]

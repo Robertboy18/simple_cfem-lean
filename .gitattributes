@@ -1,0 +1,2 @@
+# Unified-diff context retains its leading space and upstream whitespace.
+rocq/certification/configuration.patch -whitespace

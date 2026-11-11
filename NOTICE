@@ -1,0 +1,76 @@
+simple_cfem-lean
+Copyright (c) 2026 simple_cfem-lean Team
+
+The files of this repository are licensed under the Apache License 2.0 (LICENSE), except the
+files listed below, which come from or are derived from other works and carry those works'
+terms.
+
+CompCert
+--------
+
+CompCert 3.17 (https://github.com/AbsInt/CompCert) is Copyright INRIA and AbsInt Angewandte
+Informatik GmbH. Its license, reproduced in vendor/clean/LICENSE, distributes some files under the INRIA
+Non-Commercial License Agreement only, and others under a choice of that agreement or the GNU
+Lesser General Public License, version 2.1 or later. Section 4 of the agreement requires
+derivative works to be distributed under the same terms. Section 6 asks for citations of the
+INRIA CompCert research project in publications that use it.
+
+These files are derived from CompCert files that are under the INRIA Non-Commercial License
+Agreement only, and are distributed under that agreement:
+
+  rocq/compilation/CompilerBackend.v (follows the proof in driver/Compiler.v)
+  rocq/certification/configuration.patch (a patch to CompCert sources, most of them under
+    the INRIA agreement only)
+
+These files are derived from CompCert files under the choice of the INRIA agreement or the GNU
+LGPL 2.1 or later, and are distributed under the same choice:
+
+  Quadrature/CSource/Semantics/{Entry,Memory,Reduction,Simple,SmallStep,Statements,Strategy,
+    Syntax}.lean (cfrontend/Csem.v, cfrontend/Cstrategy.v, cfrontend/Csyntax.v)
+
+The other files under rocq/ use CompCert as a library and need a CompCert installation under its
+own license to build.
+
+Certora CLean
+-------------
+
+vendor/clean holds part of the export/ directory of Certora CLean
+(https://github.com/Certora/clean), a Lean port of parts of CompCert: LEAN.md, LICENSE, CCLib.lean and the twenty modules of CCLib/ that
+vendor/clean/README.md lists. vendor/clean/LICENSE is its license file, which lists export/
+among the dual-licensed files. Each file we changed says so in its first line;
+vendor/clean/README.md describes the changes and vendor/clean/upstream.json records the
+revision and the hashes of the original files.
+
+simple_cfem
+-----------
+
+simple_cfem (https://github.com/VeriNum/simple_cfem) is Copyright (c) 2026 Andrew W. Appel and
+David Bindel and is distributed under the MIT License, reproduced below. We include its
+quadrules.c as character codes in
+Quadrature/CSource/Frontend/SourceData.lean, and the clightgen output of that file,
+proof/C/quadrules.v, in rocq/clight/quadrules.v, unchanged, and in Lean syntax in
+Quadrature/Clight/Source.lean and Quadrature/Clight/TableData.lean.
+
+The MIT License of simple_cfem:
+
+  MIT License
+
+  Copyright (c) 2026 Andrew W. Appel and David Bindel
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.

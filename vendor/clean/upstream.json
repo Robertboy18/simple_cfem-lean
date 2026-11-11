@@ -1,0 +1,30 @@
+{
+  "repository": "https://github.com/Certora/clean",
+  "revision": "123f7f7767e215aceb4821f0d044336d78103ade",
+  "source_directory": "export",
+  "original_sha256": {
+    "CCLib/AST.lean": "9a90a58d028187e69756ca2a0d527ea643e18930a76133ff27f8b181cf605108",
+    "CCLib/Archi.lean": "5d76a7df27c48bafc7f70ae17eb7e09bb05b62ff5b70fa36100a25ae50af9473",
+    "CCLib/Clight.lean": "a6b1d9f2bf79cc6002d771cba974f05053ccb538cdf1307ec665e076131405bd",
+    "CCLib/ClightExec.lean": "880cf140497cdd7b223e27dd30420fcbb58eb5ace0b310189d03c232de50fa18",
+    "CCLib/ClightExecSound.lean": "9541d793eda89f53237072fd85e92fb1a8ca0b6ba162e27981e1006eae67360d",
+    "CCLib/Cop.lean": "773cc8d2ed06dc4c791f9c3aa8bb12ca3015350f3da93bb7afa75b771793996f",
+    "CCLib/Ctypes.lean": "3e4e16c4fbbbb2f5d9fa689440316c0c2004d596db321a85e735492ec7b69935",
+    "CCLib/Determinism.lean": "9b64234593c0b09805e5c2af279b84145173cb6aa7d4aeda81f4423b67bbe0ab",
+    "CCLib/Events.lean": "7150a0cf53ec6126f10cfa9cc6733f38e184da84257d7034cfe092875f8892f6",
+    "CCLib/Floats.lean": "b6fd6f9e2f7cf1d6dc0a8a75d59f9a5ce73ae6152da369813f3534fa0ea1fd61",
+    "CCLib/Globalenvs.lean": "ee2f1fe234c7c65da40855d279a7d54b5b1d5e4cf7796ee05a1f16b2b8479d43",
+    "CCLib/Integers.lean": "3705b8cc83696fc37dd0848b9a1a227d5d22012c3a43d5118601c12d17d5a747",
+    "CCLib/Maps.lean": "c11570e5dc3b74f65ec9f7a403840342c7af43dbac26ca5bb63903d2a9e59eb0",
+    "CCLib/MapsLemmas.lean": "0c7e038a6b7efc1c3a649a8f275429c403107fe426669f65e0e0ea82ac47d3ac",
+    "CCLib/Memdata.lean": "7eb0261e4307c257088fabd2ebd6944488885ad1211b6a863b647e3d79c5f014",
+    "CCLib/MemdataLemmas.lean": "59199e9c30ab93d7ba9703c7b94536000c18d8315a8016374acaf563e6e86970",
+    "CCLib/Memory.lean": "66853cb2b649f5ff250632a41526c7116111a48bd0c7b704c0924a514def4d95",
+    "CCLib/MemoryLemmas.lean": "346702926b8577432ac33d1e6c8a253395978ee4490e44512b00c0abab838c36",
+    "CCLib/Positive.lean": "76738f8355abb7e442319c71e69634d285126a99550176418bdd41fb5912c0ea",
+    "CCLib/Values.lean": "7bd8eacae705994e5c5fafd918c9fbdba3516ebfca29f40dc26a050898801d57",
+    "CCLib.lean": "e9b3c755fe686f3bc50ccb5418b450bc787df130272007308867462c67a084c5",
+    "LEAN.md": "38a31cccb888a9610b680256e519ca26620b8e50e7bc49ec5ad4b7555e0798ed",
+    "LICENSE": "40e8151cb26269a4e051309a958714191a706b5dfc7aaec00a61137cb338a648"
+  }
+}
